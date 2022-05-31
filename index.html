@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel='stylesheet' href='styles.css'>
+</head>
+
+<body>
+    <h1>Green Screen Web page</h1>
+    <div class='img_block'>
+        <canvas id='can1'>
+        </canvas>
+        <br>
+        <label> Foreground: <input type='file' multiple='false' accept='image/*' id='fgpic'
+                onchange='uploadFg()'></label>
+    </div>
+    <div class='img_block'>
+        <canvas id='can2'>
+        </canvas>
+        <br>
+        <label> Background: <input type='file' multiple='false' accept='image/*' id='bgpic'
+                onchange='uploadBg()'></label>
+    </div>
+    <input type='button' value='Change Background' onclick='greenScreen()'>
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+    <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimplePixel.js">
+    </script>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
